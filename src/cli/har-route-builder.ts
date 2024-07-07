@@ -25,7 +25,7 @@ const write = (
   stream.write(
     `import {
   Task,
-} from '@idrinth/api-bench';
+} from '@idrinth-api-bench/framework';
 
 export default (): Task => ({
   id: '${ name }',
