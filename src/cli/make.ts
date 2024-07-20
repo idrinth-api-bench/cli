@@ -15,9 +15,6 @@ import {
 import {
   SingleBar,
 } from 'cli-progress';
-import pkg from '../../package.json' with {
-  type: 'json'
-};
 
 export default (args: string[], cwd: string,) => {
   const name = (args[FIRST_ARGUMENT] || 'benchmark')
@@ -70,7 +67,7 @@ export default (args: string[], cwd: string,) => {
       private: true,
       type: 'module',
       dependencies: {
-        '@idrinth-api-bench/framework': '^' + pkg.version,
+        '@idrinth-api-bench/framework': '^1.0.5',
       },
       devDependencies: {
         typescript: '^5.3.3',
