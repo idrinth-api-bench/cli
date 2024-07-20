@@ -84,7 +84,7 @@ export default (args: string[], cwd: string,) => {
         '@typescript-eslint/parser': '^7.0.0',
       },
       scripts: {
-        start: 'tsc -p tsconfig.json && run-benchmark',
+        start: 'tsc -p tsconfig.json && iab bench',
         test: 'c8 mocha test',
         lint: 'eslint . --ext .js,.ts,.cjs,.json',
         'lint-fix': 'eslint --fix . --ext .js,.ts,.cjs,.json',
