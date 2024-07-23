@@ -67,7 +67,8 @@
     "iabgbfh": "bin/generate-benchmark-from-har.js",
     "iabmp": "bin/make-benchmark-project.js",
     "iabgfoa": "bin/generate-benchmark-from-open-api.js",
-    "iabgbfc": "bin/generate-benchmark-from-curl.js"
+    "iabgbfc": "bin/generate-benchmark-from-curl.js",
+    "iabc": "bin/iabc.js"
   },
   "scripts": {
     "lint": "eslint . --ext .js,.ts,.cjs,.json,.tsx",
