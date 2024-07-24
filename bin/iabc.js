@@ -19,6 +19,7 @@ switch (command) {
         break;
     case "open-api":
         openApiCreate(process.argv.splice(2, 1), process.cwd())
+        break;
     default:
         throw new Error("unknown command: " + command);
 }
