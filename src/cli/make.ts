@@ -281,10 +281,10 @@ export default (args: string[], cwd: string,) => {
       '  template-curly-spacing:\n' +
       '  - warn\n' +
       '  - always\n' +
-      '   prefer-const: error\n' +
+      '  prefer-const: error\n' +
       '  no-var: error\n' +
-      '   no-useless-constructor: warn\n' +
-      '   no-useless-computed-key: warn\n' +
+      '  no-useless-constructor: warn\n' +
+      '  no-useless-computed-key: warn\n' +
       '  no-confusing-arrow: warn\n' +
       '  arrow-spacing: warn\n' +
       '  arrow-body-style:\n' +
