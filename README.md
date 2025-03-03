@@ -5,6 +5,7 @@
 
 - [@idrinth-api-bench/cli](#idrinthapi-bench-cli)
   - [Contents](#contents)
+  - [Set-Up](#set-up)
   - [What does this project do?](#what-does-this-project-do)
   - [Usage \& Examples](#usage--examples)
   - [License](#license)
@@ -15,6 +16,11 @@
 ## [Issues](https://github.com/idrinth-api-bench/issues)
 
 This is the issue repository for a typescript framework meant to performance test anything even remotely rest-like and related tools.
+
+## Set-Up 
+
+- Install dependencies with `npm ci` 
+- Run the language file setup using `npm run language`
 
 ## What does this project do?
 
