@@ -28,6 +28,63 @@ This project provides a CLI tool for @idrinth-api-bench/framework to generate co
 
 ## Usage & Examples
 
+### Creating a new benchmark project
+
+1. Clone the repository:
+```bash
+git clone https://github.com/idrinth-api-bench/cli
+```
+
+2. Navigate to the directory:
+```bash
+cd  cli
+```
+
+3. Install the dependencies:
+```bash
+npm install
+```
+
+4. Generate language files:
+```bash
+npm run language
+```
+
+5. Create a new benchmark project: 
+```bash
+npx iabc
+```
+
+### Adding routes to new benchmark project
+
+1. Go into the newly created project and create a new file at src/routes/main/first-test.ts. Fill it with the following example content:
+```typescript
+export default () => ({
+    id: 'example test case',
+    main: {
+      method: 'get',
+      url: 'https://reqres.in/api/users',
+    },
+    pre: [
+      '^user-agent',
+    ],
+    post: [
+      '^status-2xx',
+    ],
+  });
+```
+
+2. Run the benchmark:
+```bash
+cd benchmark
+npm start
+```
+
+3. Please don't try to create a service denial scenario and keep the thread count low. Creating a service denial scenario could result in the machine or network resource to become unavailable to intended users. You can use flags to modify the threads and repetitions. The total amount of requests will be threads X repetitions. Eg. 4 threads X 25 repetitions = 100 requests total. 
+```bash
+npx iab bench --threads=4 --repetitions=25
+```
+
 Please have a look at the [website](https://idrinth-api-ben.ch) for more
 information.
 
